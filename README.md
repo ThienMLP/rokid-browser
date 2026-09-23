@@ -46,7 +46,7 @@ The app has no account and no server of its own. The phone remote talks to the g
 
 *App không có tài khoản, không có máy chủ riêng. Trang điện thoại nói chuyện thẳng với kính trong mạng nội bộ. Giọng nói và trợ lý AI gửi âm thanh/chữ tới Google Gemini bằng khoá API **của bạn**.*
 
-## Credits · Ghi công
+## Credits · Nguồn gốc
 
 Based on [xnohat/rokid-glass-browser](https://github.com/xnohat/rokid-glass-browser) by Hong Phuc Nguyen (xnohat), MIT License.
 
