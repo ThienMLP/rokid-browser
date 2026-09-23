@@ -16,10 +16,10 @@ A hands‑free web browser for **Rokid AI Glasses (RV101)** — TV‑remote cont
   *Điều khiển kiểu remote TV — vuốt bàn di trên gọng để chuyển khung chọn, chạm (hoặc bấm nút thái dương) = OK, chạm 2 lần = Quay lại, giữ nút = nói với trợ lý.*
 - **Voice commands** in English or Vietnamese — "open youtube", "search …", "scroll down", "pause", "go back", "louder"… Anything more complex goes to a Gemini AI assistant that can read and operate web pages.
   *Lệnh giọng nói tiếng Anh hoặc tiếng Việt — "mở youtube", "tìm …", "cuộn xuống", "tạm dừng", "quay lại", "to lên"… Việc phức tạp hơn do trợ lý AI Gemini đọc và thao tác trang web.*
-- **Phone remote** — open `http://rokid.local:8765` on a phone on the same Wi‑Fi: live view of the glasses, touchpad, address bar, settings. No app to install on the phone.
-  *Điều khiển từ điện thoại — mở `http://rokid.local:8765` trên điện thoại cùng Wi‑Fi: xem màn hình kính, bàn di, thanh địa chỉ, cài đặt. Không cần cài app trên điện thoại.*
-- **English / Vietnamese interface** — switch in the phone remote → *Display & settings → Language*.
-  *Giao diện tiếng Anh / tiếng Việt — đổi ở trang điện thoại → Hiển thị & cài đặt → Ngôn ngữ.*
+- **Phone remote** — open `http://rokid.local:8765` on a phone on the same Wi‑Fi: address bar, AI assistant, video controls, touchpad, live view of the glasses. No app to install on the phone.
+  *Điều khiển từ điện thoại — mở `http://rokid.local:8765` trên điện thoại cùng Wi‑Fi: thanh địa chỉ, trợ lý AI, điều khiển video, bàn di, xem màn hình kính. Không cần cài app trên điện thoại.*
+- **English / Vietnamese interface** — the **VI | EN** button at the top of the phone page.
+  *Giao diện tiếng Anh / tiếng Việt — nút **VI | EN** trên cùng trang điện thoại.*
 
 ## Install · Cài đặt
 
@@ -29,7 +29,7 @@ A hands‑free web browser for **Rokid AI Glasses (RV101)** — TV‑remote cont
 
 **Option B — ADB** (developer mode + debug cable) · *Cách B — ADB (bật chế độ nhà phát triển + cáp debug)*
 ```bash
-adb install -r rokid-browser-1.42.0.apk
+adb install -r rokid-browser-1.45.0.apk
 ```
 
 ## First use · Dùng lần đầu
@@ -37,8 +37,8 @@ adb install -r rokid-browser-1.42.0.apk
 1. Put the glasses and your phone on the same Wi‑Fi (the phone's hotspot also works). · *Cho kính và điện thoại chung Wi‑Fi (hoặc bắt hotspot của điện thoại).*
 2. On the glasses: open **AI Browser** → select the cast button (bottom‑right) → **START REMOTE**. · *Trên kính: mở AI Browser → chọn nút cast (góc dưới phải) → BẮT ĐẦU ĐIỀU KHIỂN.*
 3. On the phone open `http://rokid.local:8765` (or the IP shown on the glasses). · *Trên điện thoại mở `http://rokid.local:8765` (hoặc địa chỉ IP hiện trên kính).*
-4. For voice & the AI assistant, paste your own **Gemini API key** in *Advanced settings → Display & settings*. It is stored on the glasses only. Get a key at [aistudio.google.com](https://aistudio.google.com/apikey).
-   *Để dùng giọng nói & trợ lý AI, dán **khoá API Gemini** của bạn ở Cài đặt nâng cao → Hiển thị & cài đặt. Khoá chỉ lưu trên kính.*
+4. For voice & the AI assistant, paste your own **Gemini API key** in *⚙ Settings → AI assistant*. It is stored on the glasses only. Get a key at [aistudio.google.com](https://aistudio.google.com/apikey).
+   *Để dùng giọng nói & trợ lý AI, dán **khoá API Gemini** của bạn ở ⚙ Cài đặt → Trợ lý AI. Khoá chỉ lưu trên kính.*
 
 ## Privacy · Quyền riêng tư
 
