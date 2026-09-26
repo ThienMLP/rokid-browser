@@ -29,7 +29,7 @@ A hands‑free web browser for **Rokid AI Glasses (RV101)** — TV‑remote cont
 
 **Option B — ADB** (developer mode + debug cable) · *Cách B — ADB (bật chế độ nhà phát triển + cáp debug)*
 ```bash
-adb install -r rokid-browser-1.45.0.apk
+adb install -r rokid-browser-1.46.0.apk
 ```
 
 ## First use · Dùng lần đầu
@@ -39,6 +39,8 @@ adb install -r rokid-browser-1.45.0.apk
 3. On the phone open `http://rokid.local:8765` (or the IP shown on the glasses). · *Trên điện thoại mở `http://rokid.local:8765` (hoặc địa chỉ IP hiện trên kính).*
 4. For voice & the AI assistant, paste your own **Gemini API key** in *⚙ Settings → AI assistant*. It is stored on the glasses only. Get a key at [aistudio.google.com](https://aistudio.google.com/apikey).
    *Để dùng giọng nói & trợ lý AI, dán **khoá API Gemini** của bạn ở ⚙ Cài đặt → Trợ lý AI. Khoá chỉ lưu trên kính.*
+5. A page misbehaves (a video won't play…)? Turn on *⚙ Settings → Diagnostics → Record web page errors*, reopen the page, then open *Connection log*: it lists the requests that failed or came back empty. Addresses and error codes only; it turns itself off after 30 minutes.
+   *Trang bị lỗi (video không phát…)? Bật ⚙ Cài đặt → Chẩn đoán → Ghi lỗi trang web, mở lại trang, rồi mở Nhật ký kết nối: thấy ngay yêu cầu nào hỏng hoặc trả về rỗng. Chỉ ghi địa chỉ và mã lỗi; tự tắt sau 30 phút.*
 
 ## Privacy · Quyền riêng tư
 
