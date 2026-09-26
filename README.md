@@ -1,10 +1,10 @@
-# AI Browser for Rokid glasses
+# Rokid AI Browser
 
 A hands‑free web browser for **Rokid AI Glasses (RV101)** — TV‑remote controls on the glasses, voice commands, and a remote control page on your phone.
 
 *Trình duyệt web rảnh tay cho **kính Rokid AI (RV101)** — điều khiển kiểu remote TV ngay trên kính, ra lệnh bằng giọng nói, và trang điều khiển trên điện thoại.*
 
-> **Download / Tải về:** see **[Releases](https://github.com/ThienMLP/rokid-browser/releases/latest)** → `rokid-browser-<version>.apk`
+> **Download / Tải về:** see **[Releases](https://github.com/ThienMLP/rokid-ai-browser/releases/latest)** → `rokid-ai-browser-<version>.apk`
 >
 > Source code will be published once the app is complete. · *Mã nguồn sẽ được công bố khi app hoàn thiện.*
 
@@ -18,6 +18,12 @@ A hands‑free web browser for **Rokid AI Glasses (RV101)** — TV‑remote cont
   *Lệnh giọng nói tiếng Anh hoặc tiếng Việt — "mở youtube", "tìm …", "cuộn xuống", "tạm dừng", "quay lại", "to lên"… Việc phức tạp hơn do trợ lý AI Gemini đọc và thao tác trang web.*
 - **Phone remote** — open `http://rokid.local:8765` on a phone on the same Wi‑Fi: address bar, AI assistant, video controls, touchpad, live view of the glasses. No app to install on the phone.
   *Điều khiển từ điện thoại — mở `http://rokid.local:8765` trên điện thoại cùng Wi‑Fi: thanh địa chỉ, trợ lý AI, điều khiển video, bàn di, xem màn hình kính. Không cần cài app trên điện thoại.*
+- **Made for the see‑through display** — *Transparent* mode repaints page backgrounds to black (black emits no light on the waveguide, so it still looks see‑through) while menus, dialogs and sticky bars keep covering what is behind them.
+  *Hợp với màn nhìn xuyên — chế độ Trong suốt tô nền trang thành đen (đen không phát sáng trên kính nên vẫn trong suốt) mà menu, hộp thoại, thanh dính vẫn che được phần phía sau.*
+- **Page width per site** — *⚙ Settings → Display → Page width*: lay a cramped site out like a phone or tablet and shrink it to fit; remembered per site.
+  *Khổ trang theo từng web — ⚙ Cài đặt → Hiển thị → Khổ trang: dựng web bị chật như trên điện thoại/máy tính bảng rồi thu cho vừa; nhớ riêng từng web.*
+- **Fullscreen video zoom** — ×1.5 · ×2 · ×2.5 to read small slide text, then pan with the arrows or the touchpad.
+  *Phóng video toàn màn hình — ×1,5 · ×2 · ×2,5 để đọc chữ nhỏ trên slide, rồi di chuyển bằng mũi tên hoặc bàn di.*
 - **English / Vietnamese interface** — the **VI | EN** button at the top of the phone page.
   *Giao diện tiếng Anh / tiếng Việt — nút **VI | EN** trên cùng trang điện thoại.*
 
@@ -29,13 +35,13 @@ A hands‑free web browser for **Rokid AI Glasses (RV101)** — TV‑remote cont
 
 **Option B — ADB** (developer mode + debug cable) · *Cách B — ADB (bật chế độ nhà phát triển + cáp debug)*
 ```bash
-adb install -r rokid-browser-1.46.0.apk
+adb install -r rokid-ai-browser-1.62.0.apk
 ```
 
 ## First use · Dùng lần đầu
 
 1. Put the glasses and your phone on the same Wi‑Fi (the phone's hotspot also works). · *Cho kính và điện thoại chung Wi‑Fi (hoặc bắt hotspot của điện thoại).*
-2. On the glasses: open **AI Browser** → select the cast button (bottom‑right) → **START REMOTE**. · *Trên kính: mở AI Browser → chọn nút cast (góc dưới phải) → BẮT ĐẦU ĐIỀU KHIỂN.*
+2. On the glasses: open **Rokid AI Browser** → select the cast button (bottom‑right) → **START REMOTE**. · *Trên kính: mở Rokid AI Browser → chọn nút cast (góc dưới phải) → BẮT ĐẦU ĐIỀU KHIỂN.*
 3. On the phone open `http://rokid.local:8765` (or the IP shown on the glasses). · *Trên điện thoại mở `http://rokid.local:8765` (hoặc địa chỉ IP hiện trên kính).*
 4. For voice & the AI assistant, paste your own **Gemini API key** in *⚙ Settings → AI assistant*. It is stored on the glasses only. Get a key at [aistudio.google.com](https://aistudio.google.com/apikey).
    *Để dùng giọng nói & trợ lý AI, dán **khoá API Gemini** của bạn ở ⚙ Cài đặt → Trợ lý AI. Khoá chỉ lưu trên kính.*
