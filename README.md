@@ -35,7 +35,7 @@ A hands‑free web browser for **Rokid AI Glasses (RV101)** — TV‑remote cont
 
 **Option B — ADB** (developer mode + debug cable) · *Cách B — ADB (bật chế độ nhà phát triển + cáp debug)*
 ```bash
-adb install -r rokid-ai-browser-1.62.0.apk
+adb install -r rokid-ai-browser-<version>.apk   # e.g. · vd: rokid-ai-browser-1.67.0.apk
 ```
 
 ## First use · Dùng lần đầu
